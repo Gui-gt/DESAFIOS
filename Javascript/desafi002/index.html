@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual o país?</title>
+</head>
+<body>
+    <header>
+        <h1>de que país vc é?</h1>
+    </header>
+    <section>
+        <div>
+            <p>pais: <input type="text" name="text" id="txte"></p>
+            <input type="button" value="pesquisar" onclick="pesquisar()">
+        </div>
+        <div id="res"></div>
+    </section>
+    <script>
+        function pesquisar(){
+            var pais = document.getElementById('txte')
+            var res = document.getElementById('res')
+            if(pais == 'Brasil'){
+                res.innerHTML = `Brasileiro`
+            }else if(pais == 'Irlanda'){
+                res.innerHTML = `Irlandes`
+            }
+        }
+    </script>
+</body>
+</html>
